@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kroeber e a Antropologia Jurídica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav button {
+      background: transparent;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 0 10px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #555;
+    }
+
+    .tab {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 15px;
+    }
+
+    .tab.active {
+      display: block;
+    }
+
+    h1, h2 {
+      color: #ffd166;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .quiz-options button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      background-color: #118ab2;
+      border: none;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .quiz-options button:hover {
+      background-color: #06d6a0;
+    }
+
+    #next-btn {
+      display: none;
+      background-color: #06d6a0;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #ffd166;
+    }
+
+    .text-container {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .text-container {
+        padding: 15px;
+      }
+
+      nav button {
+        font-size: 0.9em;
+        padding: 10px 18px;
+      }
+
+      .quiz-options button {
+        font-size: 1em;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="showTab('inicio')">Início</button>
+    <button onclick="showTab('kroeber')">Sobre Kroeber</button>
+    <button onclick="showTab('cultura')">Cultura segundo Kroeber</button>
+    <button onclick="showTab('prova')">Sobre a Prova</button>
+    <button onclick="showTab('quiz')">Quiz</button>
+  </nav>
+
+  <div id="inicio" class="tab active">
+    <h1>Bem-vindo ao site sobre Kroeber!</h1>
+    <div class="text-container">
+      <p>A Antropologia Jurídica é uma área da antropologia que busca entender a relação entre as leis e as culturas em diferentes sociedades. Ela se interessa em estudar como as normas jurídicas e os direitos são moldados pelas culturas de cada grupo social, considerando as particularidades de cada contexto cultural.</p>
+      <p>Alfred L. Kroeber foi um dos principais antropólogos do século XX e é amplamente reconhecido por suas contribuições no campo da cultura. Ele propôs que a cultura é um fenômeno coletivo, que vai além dos indivíduos, sendo uma força social que influencia a organização e o comportamento das pessoas em uma sociedade.</p>
+      <p>Este site visa apresentar suas principais teorias e discutir sua relação com a Antropologia Jurídica, com explicações detalhadas e uma experiência interativa para reforçar o aprendizado.</p>
+    </div>
+  </div>
+
+  <div id="kroeber" class="tab">
+    <h2>Quem foi Alfred L. Kroeber?</h2>
+    <div class="text-container">
+      <p>Alfred L. Kroeber (1876-1960) foi um antropólogo norte-americano, um dos principais discípulos de Franz Boas. Ele é conhecido por suas pesquisas sobre as culturas nativas americanas e por suas teorias inovadoras sobre a cultura e a sociedade.</p>
+      <p>Kroeber defendeu a ideia de que a cultura é superorgânica, ou seja, existe independentemente dos indivíduos e influencia profundamente os comportamentos e as interações sociais. Para ele, a cultura é um fenômeno social que vai além dos aspectos biológicos e instintivos do ser humano, sendo criada e mantida pela sociedade ao longo do tempo.</p>
+      <p>Além disso, Kroeber foi um defensor da ideia de que a cultura é dinâmica, e pode ser entendida como um conjunto de valores, práticas e crenças compartilhadas por um grupo social. Essa perspectiva tem implicações diretas na forma como compreendemos as leis e os direitos dentro de uma cultura específica.</p>
+    </div>
+  </div>
+
+  <div id="cultura" class="tab">
+    <h2>Cultura segundo Kroeber</h2>
+    <div class="text-container">
+      <p>Kroeber acreditava que a cultura não é algo biológico nem exclusivamente individual, mas um conjunto de práticas e normas sociais** compartilhadas por uma comunidade. Ele introduziu o conceito de superorgânico, que se refere à ideia de que a cultura, embora seja criada pelos indivíduos, acaba se tornando uma força social independente, que molda a vida coletiva.</p>
+      <p>Segundo Kroeber, a cultura é transmitida por meio da socialização, onde os indivíduos aprendem os valores, crenças e práticas de sua sociedade. Esses elementos culturais incluem as normas jurídicas, que refletem os comportamentos aceitáveis dentro de um grupo e são reguladas por instituições sociais.</p>
+      <p>Em relação ao Direito, Kroeber acreditava que as normas jurídicas não podem ser entendidas isoladamente, mas devem ser analisadas no contexto cultural específico de uma sociedade. As normas jurídicas são um reflexo da cultura, e, por isso, variam de acordo com os valores e crenças de cada sociedade.</p>
+    </div>
+  </div>
+
+  <div id="prova" class="tab">
+    <h2>Sobre a Prova</h2>
+    <div class="text-container">
+      <p>Esta prova faz parte da disciplina de Antropologia Jurídica do curso de Direito da Universidade Estadual do Maranhão (UEMA). O trabalho foi elaborado pelos alunos Glenda Rayane da Silva Martins e Alex Paulo Santos da Silva, com o objetivo de apresentar as teorias de Alfred L. Kroeber sobre cultura e sua relação com o Direito.</p>
+      <p>O produto final é este site interativo, que apresenta as principais contribuições de Kroeber para a Antropologia Jurídica e oferece um quiz para testar os conhecimentos adquiridos. Este trabalho foi desenvolvido com base nas orientações dadas pela professora da disciplina.</p>
+    </div>
+  </div>
+
+  <div id="quiz" class="tab">
+    <h2>Quiz: Cultura e Kroeber</h2>
+    <div id="question" style="margin: 20px 0; font-size: 1.2em;"></div>
+    <div class="quiz-options" id="options"></div>
+    <button id="next-btn" onclick="nextQuestion()">Próxima</button>
+    <div id="result" style="margin-top: 20px;"></div>
+  </div>
+
+  <script>
+    // Alternância entre abas
+    function showTab(tabId) {
+      document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+      document.getElementById(tabId).classList.add("active");
+    }
+
+    // Quiz
+    const perguntas = [
+      { pergunta: "1. Para Kroeber, o que é cultura?", opcoes: ["Biologia humana", "Herança social aprendida", "Sistema jurídico formal"], correta: 1 },
+      { pergunta: "2. Cultura, para Kroeber, é:", opcoes: ["Transmissível geneticamente", "Universal e herdada socialmente", "Limitada ao Ocidente"], correta: 1 },
+      { pergunta: "3. Qual dessas afirmativas Kroeber defende?", opcoes: ["A cultura independe da sociedade", "A cultura é essencialmente coletiva", "Cultura é instinto humano"], correta: 1 },
+      { pergunta: "4. O que distingue o ser humano, segundo Kroeber?", opcoes: ["A linguagem animal", "A razão matemática", "A capacidade de criar cultura"], correta: 2 },
+      { pergunta: "5. Cultura, na visão de Kroeber, é:", opcoes: ["Uma invenção jurídica", "Um fenômeno social aprendido", "Exclusiva da elite"], correta: 1 },
+      { pergunta: "6. Kroeber considera a cultura como:", opcoes: ["Algo biológico", "Produto da hereditariedade", "Superorgânica"], correta: 2 },
+      { pergunta: "7. O termo 'superorgânico' em Kroeber significa:", opcoes: ["Além do organismo individual", "Superpoderes", "Sistema jurídico superior"], correta: 0 },
+      { pergunta: "8. A relação entre Direito e Cultura, segundo Kroeber, é:", opcoes: ["Não existe relação", "O Direito é um reflexo da cultura", "O Direito é antagônico à cultura"], correta: 1 },
+      { pergunta: "9. O que Kroeber dizia sobre os valores culturais?", opcoes: ["São imutáveis", "São transmitidos e aprendidos", "Não influenciam o comportamento"], correta: 1 },
+      { pergunta: "10. O que a cultura deve ser para Kroeber?", opcoes: ["Livre de normas", "Um fenômeno social", "Restrita ao comportamento individual"], correta: 1 },
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      const questionElement = document.getElementById('question');
+      const optionsElement = document.getElementById('options');
+      const current = perguntas[currentQuestion];
+
+      questionElement.innerHTML = current.pergunta;
+      optionsElement.innerHTML = current.opcoes.map((opcao, index) => 
+        `<button onclick="checkAnswer(${index})">${opcao}</button>`).join('');
+    }
+
+    function checkAnswer(selectedIndex) {
+      if (selectedIndex === perguntas[currentQuestion].correta) {
+        score++;
+      }
+
+      document.getElementById('next-btn').style.display = 'block';
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+
+      if (currentQuestion < perguntas.length) {
+        loadQuestion();
+        document.getElementById('next-btn').style.display = 'none';
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById('result').innerHTML = `Você acertou ${score} de ${perguntas.length}!`;
+      document.getElementById('next-btn').style.display = 'none';
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
